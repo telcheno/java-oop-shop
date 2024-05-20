@@ -112,14 +112,15 @@ public class Prodotto {
 	
 //	spongo il riepilogo delprodotto col metodo toString
 	public String toString() {
-		String riepilogoProdotto = ("I dati del prodotto: \n" 
+		String riepilogoProdotto = ("DATI DEL PRODOTTO: \n" 
 				+ "codice: "  + this.codice + "\n" 
 				+ "Nome prodotto: " + this.nome + "\n" 
 				+ "Descrizione prodotto: " +  this.descrizione + "\n" 
 				+ "Prezzo base: " + this.prezzo + "\n" 
 				+ "iva 22%: " + this.getIva() + "\n" 
 				+ "Prezzo col'Iva: " + this.getPrezzoIva() + ". \n" 
-				+ "PRODOTTO: " + this.codice + " - "  + this.nome + " - " + this.descrizione + " - €" + this.getPrezzoIva() + ". \n");
+//	Stampo la descrizione stesa del prodotto			
+				+ "PRODOTTO: " + this.codice + " - "  + this.nome + " - " + this.descrizione + " - €" + this.getPrezzoIva() + " \n");
 		return riepilogoProdotto;
 	}
 }
